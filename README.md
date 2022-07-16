@@ -1,4 +1,10 @@
-# vitejs-vite-wu1rsm
+# Project
+
+Sample project built with:
+
+- Vite
+- Svelte
+- Rxjs
 
 ## Info
 
