@@ -1,7 +1,6 @@
 <script lang="ts">
   import svelteLogo from './assets/svelte.svg';
-  import Counter from './lib/Counter.svelte';
-  import UuidGenerator from './lib/UuidGenerator.svelte';
+  import Features from './lib/Features.svelte';
 </script>
 
 <main>
@@ -15,16 +14,13 @@
   </div>
   <h1>Vite + Svelte</h1>
 
-  <div class="card">
-    <Counter />
-  </div>
-  <div class="card">
-    <UuidGenerator />
-  </div>
-
   <p>
     Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank">SvelteKit</a>, the official Svelte app framework powered by Vite!
   </p>
+
+  <section>
+    <Features />
+  </section>
 
   <p class="read-the-docs">
     Click on the Vite and Svelte logos to learn more
