@@ -11,6 +11,7 @@ const config = {
             pages: "docs",
             assets: "docs"
         }),
+        outDir: './docs',
         paths: {
             // change below to your repo name
             base: dev ? "" : "/vitejs-svelte",
