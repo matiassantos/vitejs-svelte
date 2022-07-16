@@ -6,10 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:prod": "vite build --base=/vitejs-svelte/",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
+    "@sveltejs/adapter-static": "^1.0.0-next.36",
+    "@sveltejs/kit": "^1.0.0-next.377",
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
     "@tsconfig/svelte": "^3.0.0",
     "rxjs": "^7.5.6",
