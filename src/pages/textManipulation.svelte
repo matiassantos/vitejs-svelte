@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { map, delay } from 'rxjs/operators';
   import { SvelteSubject } from '../lib/models/SvelteSubject';
 
