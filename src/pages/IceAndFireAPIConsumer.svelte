@@ -34,7 +34,7 @@
   )
 </script>
 
-
+<h1>Ice and Fire API</h1>
 <h2>Search for show episodes</h2>
 <input id="episode-searhc-input" bind:value="{$typeAhead}" />
 

@@ -1,7 +1,6 @@
 <script lang="ts">
   import svelteLogo from './assets/svelte.svg';
   import Features from './lib/Features.svelte';
-  import RxjsServiceConsumer from './pages/RxjsServiceConsumer.svelte';
 </script>
 
 <main>
@@ -18,10 +17,6 @@
   <p>
     Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank">SvelteKit</a>, the official Svelte app framework powered by Vite!
   </p>
-
-  <section>
-    <RxjsServiceConsumer />
-  </section>
 
   <section>
     <Features />

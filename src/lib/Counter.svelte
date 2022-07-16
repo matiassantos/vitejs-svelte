@@ -5,6 +5,8 @@
   }
 </script>
 
+<h2>Simple clicks counter:</h2>
+<pre>clicked {count} times</pre>
 <button on:click={increment}>
-  count is {count}
+  Click me
 </button>
