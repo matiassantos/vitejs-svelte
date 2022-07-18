@@ -4,10 +4,9 @@
 
 <div class="container">
   <Link to="/">Home</Link>
-  <Link to="/about">About</Link>
   <Link to="/features">Features</Link>
-  <Link to="/features/animation">3D Animation</Link>
-  <Link to="/">Transitions</Link>
+  <Link to="/blog">Blog</Link>
+  <Link to="/about">About me</Link>
 </div>
 
 <style>
