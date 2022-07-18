@@ -19,4 +19,4 @@ Uselful links to understand the implementation of this project:
 
 ## Edit
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-wu1rsm)
+[Check Live](https://matiassantos.github.io/vitejs-svelte/)
