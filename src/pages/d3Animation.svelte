@@ -4,14 +4,12 @@
 
   let vis;
   let data = [];
-  for (let i = 0; i < 100; ++i) {
-    data.push({ x: Math.random() * 10, y: Math.random() * 10 });
-  }
 
   let xScale = d3.scaleLinear().domain([0, 10]);
   let yScale = d3.scaleLinear().domain([0, 10]);
   let width: number;
   let height: number;
+
   const margin = {
     top: 20,
     right: 20,
@@ -65,12 +63,26 @@
     redraw();
     window.addEventListener('resize', redraw);
   });
+
+  function generateListOfPoints() {
+    data = [];
+    for (let i = 0; i < 100; ++i) {
+      data.push({ x: Math.random() * 10, y: Math.random() * 10 });
+    }
+    redraw();
+  }
 </script>
 
 <section class="container">
   <h2>d3 Manipulation</h2>
   <div id="vis" bind:this={vis} />
-  <button>ReGen</button>
+  <button on:click={() => generateListOfPoints()}>
+    {#if !data.length}
+      Generate
+    {:else}
+      Regenerate
+    {/if}
+  </button>
 </section>
 
 <style>
