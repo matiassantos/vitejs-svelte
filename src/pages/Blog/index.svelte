@@ -7,10 +7,10 @@
 
 <Router primary={false}>
   <Navigator />
-  <Route path="">
+  <Route path="/">
     <Blog />
   </Route>
-  <Route path="/:id">
-    <BlogPost />
+  <Route path="/:id" let:params>
+    <BlogPost data-postid={params.id} />
   </Route>
 </Router>
