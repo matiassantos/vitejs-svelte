@@ -1,6 +1,6 @@
 <script lang="ts">
   import * as d3 from 'd3';
-  import { onMount } from 'svelte';
+  import { onDestroy, onMount } from 'svelte';
 
   let vis;
   let data = [];
@@ -18,17 +18,20 @@
   };
 
   function redraw(): void {
+    const findElement = d3.select(vis);
+    if (findElement.empty()) {
+      return;
+    }
     // empty vis div
-    d3.select(vis).html(null);
+    findElement.html(null);
     // determine width & height of parent element minus the margin
-    width = d3.select(vis).node().getBoundingClientRect().width - margin.left - margin.right;
-    height = d3.select(vis).node().getBoundingClientRect().height - margin.top - margin.bottom;
+    width = findElement.node().getBoundingClientRect().width - margin.left - margin.right;
+    height = findElement.node().getBoundingClientRect().height - margin.top - margin.bottom;
     // init scales according to new width & height
     xScale.range([0, width]);
     yScale.range([height, 0]);
     // create svg and group that is translated by the margin
-    const svg = d3
-      .select(vis)
+    const svg = findElement
       .append('svg')
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom)
@@ -62,6 +65,10 @@
   onMount(() => {
     redraw();
     window.addEventListener('resize', redraw);
+  });
+
+  onDestroy(() => {
+    window.removeEventListener('resize', redraw);
   });
 
   function generateListOfPoints() {
