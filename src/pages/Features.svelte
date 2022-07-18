@@ -12,7 +12,7 @@
   <Router primary={false}>
     <FeaturesNavigation />
     <Route path="">
-      <div>Some features developed</div>
+      <h2>Some features developed</h2>
     </Route>
     <Route path="counter" component={Counter} />
     <Route path="unique-id" component={UuidGenerator} />
