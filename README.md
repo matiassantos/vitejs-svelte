@@ -16,6 +16,7 @@ Uselful links to understand the implementation of this demo project:
 - ['How to Svelte Rxjs](https://goodguydaniel.com/blog/how-to-svelte-rxjs)
 - ['API of Ice and Fire'](https://anapioficeandfire.com/)
 - ['API Datos publicos gob. Arg.'](https://www.argentina.gob.ar/jefatura/innovacion-tecnologica/servicios-y-pais-digital/gobierno-abierto/datos-abiertos)
+- ['API Catalogo de datos abiertos Argentina'](https://www.argentina.gob.ar/onti/software-publico/catalogo/apis)
 - ['Svelte and d3'](https://medium.com/codex/getting-started-with-svelte-and-d3-js-ea915d2c2c2c)
 - ['Vite'](https://vitejs.dev/config/)
 
