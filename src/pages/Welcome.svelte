@@ -19,7 +19,7 @@
   .container {
     display: grid;
     grid-template-columns: 40vw 40vw;
-    grid-template-rows: 100vh;
+    grid-template-rows: max-content;
     align-items: center;
     justify-items: center;
   }
@@ -29,7 +29,7 @@
   }
   .logo {
     height: 45vh;
-    padding: 1.5em;
+    margin: 3.5em;
     will-change: filter;
   }
   .logo:hover {
